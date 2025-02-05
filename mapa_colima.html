@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b59bcb6e9edf6eef1b6f469490aa8d4f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b59bcb6e9edf6eef1b6f469490aa8d4f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b59bcb6e9edf6eef1b6f469490aa8d4f = L.map(
+                "map_b59bcb6e9edf6eef1b6f469490aa8d4f",
+                {
+                    center: [19.242693, -103.724436],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 16,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_756a3afc5adea55a3d9513059a80d6ae = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_756a3afc5adea55a3d9513059a80d6ae.addTo(map_b59bcb6e9edf6eef1b6f469490aa8d4f);
+        
+    
+            var marker_98f1a0e8cd6bca9dcc40e9f705b58f67 = L.marker(
+                [19.242693, -103.724436],
+                {
+}
+            ).addTo(map_b59bcb6e9edf6eef1b6f469490aa8d4f);
+        
+    
+            var icon_e2f2c700e13b2c8945cab086a36bf41b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_98f1a0e8cd6bca9dcc40e9f705b58f67.setIcon(icon_e2f2c700e13b2c8945cab086a36bf41b);
+        
+    
+        var popup_4bba4481d937d55bbebf4cfa59a780ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_97eefd05b65db59c400fca459b34cda9 = $(`<div id="html_97eefd05b65db59c400fca459b34cda9" style="width: 100.0%; height: 100.0%;">Archivo Histórico del Municipio de Colima</div>`)[0];
+                popup_4bba4481d937d55bbebf4cfa59a780ab.setContent(html_97eefd05b65db59c400fca459b34cda9);
+            
+        
+
+        marker_98f1a0e8cd6bca9dcc40e9f705b58f67.bindPopup(popup_4bba4481d937d55bbebf4cfa59a780ab)
+        ;
+
+        
+    
+    
+            var marker_d3445b9937ada791823f7ee9b3fbdc98 = L.marker(
+                [19.24395, -103.72513],
+                {
+}
+            ).addTo(map_b59bcb6e9edf6eef1b6f469490aa8d4f);
+        
+    
+            var icon_0e0fc88518a5c45bfa5b85e23ca5ccfd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d3445b9937ada791823f7ee9b3fbdc98.setIcon(icon_0e0fc88518a5c45bfa5b85e23ca5ccfd);
+        
+    
+        var popup_1dd409eca289560fc4e8a5df7deed4ad = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_611be147a21cab825b1ad38d8238ea04 = $(`<div id="html_611be147a21cab825b1ad38d8238ea04" style="width: 100.0%; height: 100.0%;">Teatro Hidalgo</div>`)[0];
+                popup_1dd409eca289560fc4e8a5df7deed4ad.setContent(html_611be147a21cab825b1ad38d8238ea04);
+            
+        
+
+        marker_d3445b9937ada791823f7ee9b3fbdc98.bindPopup(popup_1dd409eca289560fc4e8a5df7deed4ad)
+        ;
+
+        
+    
+    
+            var marker_48058ceed684b17ba1749248139b724a = L.marker(
+                [19.244285, -103.7259],
+                {
+}
+            ).addTo(map_b59bcb6e9edf6eef1b6f469490aa8d4f);
+        
+    
+            var icon_b1e2c655ae283a32acc8a8c30e3c0cb4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_48058ceed684b17ba1749248139b724a.setIcon(icon_b1e2c655ae283a32acc8a8c30e3c0cb4);
+        
+    
+        var popup_bdf0f102cfbd7702df738f9218326acb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b33e62cb8870ee8d9717c750342a8632 = $(`<div id="html_b33e62cb8870ee8d9717c750342a8632" style="width: 100.0%; height: 100.0%;">Hotel América</div>`)[0];
+                popup_bdf0f102cfbd7702df738f9218326acb.setContent(html_b33e62cb8870ee8d9717c750342a8632);
+            
+        
+
+        marker_48058ceed684b17ba1749248139b724a.bindPopup(popup_bdf0f102cfbd7702df738f9218326acb)
+        ;
+
+        
+    
+    
+            var marker_0664cbbf46abb11c625b434fc865531d = L.marker(
+                [19.245378, -103.72634],
+                {
+}
+            ).addTo(map_b59bcb6e9edf6eef1b6f469490aa8d4f);
+        
+    
+            var icon_b4bf503368f504a2acebdbba5957a692 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0664cbbf46abb11c625b434fc865531d.setIcon(icon_b4bf503368f504a2acebdbba5957a692);
+        
+    
+        var popup_b9867b659252b171b52c113517f4ac79 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6eecbfdc144964c1f495fe2c3f76f8de = $(`<div id="html_6eecbfdc144964c1f495fe2c3f76f8de" style="width: 100.0%; height: 100.0%;">Hotel Concierge</div>`)[0];
+                popup_b9867b659252b171b52c113517f4ac79.setContent(html_6eecbfdc144964c1f495fe2c3f76f8de);
+            
+        
+
+        marker_0664cbbf46abb11c625b434fc865531d.bindPopup(popup_b9867b659252b171b52c113517f4ac79)
+        ;
+
+        
+    
+    
+            var marker_fc148c5f8b4d74ae6c032ca603bb0e77 = L.marker(
+                [19.243208, -103.725987],
+                {
+}
+            ).addTo(map_b59bcb6e9edf6eef1b6f469490aa8d4f);
+        
+    
+            var icon_c6f687ae7fffc228d4df29f9efe4c9d2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fc148c5f8b4d74ae6c032ca603bb0e77.setIcon(icon_c6f687ae7fffc228d4df29f9efe4c9d2);
+        
+    
+        var popup_04933efe04c66cad3ef7306c65de46bd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dc899488c82dbde7d806d52eb4b90517 = $(`<div id="html_dc899488c82dbde7d806d52eb4b90517" style="width: 100.0%; height: 100.0%;">Pinacoteca</div>`)[0];
+                popup_04933efe04c66cad3ef7306c65de46bd.setContent(html_dc899488c82dbde7d806d52eb4b90517);
+            
+        
+
+        marker_fc148c5f8b4d74ae6c032ca603bb0e77.bindPopup(popup_04933efe04c66cad3ef7306c65de46bd)
+        ;
+
+        
+    
+    
+            var marker_4fb44a1981176d09672720073b5797fb = L.marker(
+                [19.241985, -103.724608],
+                {
+}
+            ).addTo(map_b59bcb6e9edf6eef1b6f469490aa8d4f);
+        
+    
+            var icon_90fc56eedf0a98f3ac70979d6b1ee00b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4fb44a1981176d09672720073b5797fb.setIcon(icon_90fc56eedf0a98f3ac70979d6b1ee00b);
+        
+    
+        var popup_59226673bf4f4a533fdc586037111669 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ccfa08bfdd856fbef59b54fd75089261 = $(`<div id="html_ccfa08bfdd856fbef59b54fd75089261" style="width: 100.0%; height: 100.0%;">Presidencia Municipal</div>`)[0];
+                popup_59226673bf4f4a533fdc586037111669.setContent(html_ccfa08bfdd856fbef59b54fd75089261);
+            
+        
+
+        marker_4fb44a1981176d09672720073b5797fb.bindPopup(popup_59226673bf4f4a533fdc586037111669)
+        ;
+
+        
+    
+    
+            var poly_line_8dd4dcf6db99b0f6b26bc13396bd98f0 = L.polyline(
+                [[19.242693, -103.724436], [19.24395, -103.72513], [19.244285, -103.7259], [19.245378, -103.72634], [19.243208, -103.725987], [19.241985, -103.724608]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b59bcb6e9edf6eef1b6f469490aa8d4f);
+        
+</script>
+</html>
